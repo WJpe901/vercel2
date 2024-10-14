@@ -10,7 +10,7 @@ console.log(join(__dirname, "src/views"));
 app.set("views", join(__dirname, "src/views"));
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => res.send("hello world"));
+app.get("/", (req, res) => res.render("index"));
 
 app.listen(3000);
 console.log("server is listen on port", 3000);
